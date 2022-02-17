@@ -7,8 +7,8 @@ public class LineComparison {
 
 		// Declare and Initialize variable (x,y)coordinates.
 
-		int x1 = 2, y1 = 7, x2 = 5, y2 = 3;
-		int x11 = 2, y11 = 7, x12 = 5, y12 = 3;
+		int x1 = 2, y1 = 7, x2 = 5, y2 = 3; // variables for first line
+		int x11 = 4, y11 = 7, x12 = 11, y12 = 3;// variables for Second line
 
 		// Calculate length of line using given formula.
 
@@ -20,9 +20,12 @@ public class LineComparison {
 		System.out.println(
 				"Length of the line" + "(" + x11 + "," + y11 + ")," + "(" + x12 + "," + y12 + ") :" + Lengthofline2);
 
-		if (Lengthofline1 == Lengthofline2)
+		if (Lengthofline1 == Lengthofline2) // condition for to check line equlity
 			System.out.println("Both Two lines are equal");
-		else
-			System.out.println("Both Two lines are not equal");
+		else if (Lengthofline1 > Lengthofline2) // else condition for check line1 greater than line2
+			System.out.println("Line 1 is greater than Line2");
+
+		else // else condition for check line1 shorter than line2
+			System.out.println("Line 1 is less than Line2");
 	}
 }
